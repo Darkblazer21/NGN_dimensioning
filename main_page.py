@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.set_page_config(page_title="Accueil", page_icon="👋", layout="centered")
+
 st.markdown("# Bienvenue sur l'application de dimensionnement EPC de Brems MBODJ 👨‍💻⚡️🚀")
 st.write("\n")
 st.sidebar.markdown("# Page d'accueil 🤓")
