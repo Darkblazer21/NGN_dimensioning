@@ -1,12 +1,12 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="Data Card", page_icon="📶", layout="centered")
+st.set_page_config(page_title="Smartphone", page_icon="📱", layout="centered")
 
-st.markdown("# 👋 Ici Kingbrems 👑😎")
-st.sidebar.markdown("# C'est la première page 🌟")
+st.markdown("# Voyons le calcul pour les smartphones 🤔🤳🏽")
+st.sidebar.markdown("# C'est la deuxième page ✨")
 
-st.markdown("## Volume de trafic Internet & VPN généré par une \"Data Card\" en UL/DL et DL")
+st.markdown("## Volume de trafic Internet & VPN généré par un \"Smartphone\" en UL/DL et DL")
 
 data = pd.DataFrame(columns=['Type de services', 'Nombre de session à l\'HC', 'Taille session à l\'HC', 'Pourcentage DL', 'Volume trafic à l\'HC en UL/DL (Mb)', 'Volume trafic à l\'HC en DL (Mb)'])
 
