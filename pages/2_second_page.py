@@ -18,11 +18,6 @@ if "total_internet_ul_dl_phone" not in st.session_state:
 if "total_internet_dl_phone" not in st.session_state:
     st.session_state.total_internet_dl_phone = 0.0
 
-# if "total_vpn_ul_dl_phone" not in st.session_state:
-#     st.session_state.total_vpn_ul_dl_phone = 0.0
-
-# if "total_vpn_dl_phone" not in st.session_state:
-#     st.session_state.total_vpn_dl_phone = 0.0
 
 
 services = ['Navigation web', 'Email', 'Streaming video', 'VPN', 'Gaming']
@@ -48,8 +43,6 @@ if submit_button:
     # Réinitialisez les valeurs supplémentaires à zéro
     st.session_state.total_internet_ul_dl_phone = 0.0
     st.session_state.total_internet_dl_phone = 0.0
-    # st.session_state.total_vpn_ul_dl_phone = 0.0
-    # st.session_state.total_vpn_dl_phone = 0.0
 
     for index, row in st.session_state.data_page2.iterrows():
         volume_ul_dl_phone = row['Volume trafic à l\'HC en UL/DL (Mb)']
@@ -61,11 +54,7 @@ if submit_button:
                 st.session_state.total_internet_ul_dl_phone += volume_ul_dl_phone
             if volume_dl_phone is not None:
                 st.session_state.total_internet_dl_phone += volume_dl_phone
-        # else:
-        #     if volume_ul_dl_phone is not None:
-        #         st.session_state.total_vpn_ul_dl_phone += volume_ul_dl_phone
-        #     if volume_dl_phone is not None:
-        #         st.session_state.total_vpn_dl_phone += volume_dl_phone  
+
 
     st.session_state.data_page2['Volume trafic à l\'HC en UL/DL (Mb)'] = st.session_state.data_page2['Taille session à l\'HC'] * st.session_state.data_page2['Nombre de session à l\'HC']
     st.session_state.data_page2['Volume trafic à l\'HC en DL (Mb)'] = st.session_state.data_page2['Volume trafic à l\'HC en UL/DL (Mb)'] * (st.session_state.data_page2['Pourcentage DL'] / 100)
@@ -76,7 +65,3 @@ st.table(st.session_state.data_page2)
 st.markdown("## Volume total du trafic Internet")
 st.write(f"- UL/DL : {st.session_state.total_internet_ul_dl_phone} Mb")
 st.write(f"- DL : {st.session_state.total_internet_dl_phone} Mb")
-
-# st.markdown("## Volume total du trafic VPN")
-# st.write(f"- UL/DL : {st.session_state.total_vpn_ul_dl_phone} Mb")
-# st.write(f"- DL : {st.session_state.total_vpn_dl_phone} Mb")
