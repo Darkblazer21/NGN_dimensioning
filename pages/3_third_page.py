@@ -63,7 +63,7 @@ st.markdown(" **:blue[Procédons au calcul maintenant, remplis les champs suivan
 
 # Demander à l'utilisateur de saisir les valeurs
 total_internet_ul_dl_phone = st.number_input("Total trafic Internet en UL/DL pour les Smartphones", value=st.session_state.total_internet_ul_dl_phone)
-total_internet_ul_dl_card = st.number_input("Total trafic Internet en UL/DL pour les Data cards", value=st.session_state.total_internet_dl_card)
+total_internet_ul_dl_card = st.number_input("Total trafic Internet en UL/DL pour les Data cards", value=st.session_state.total_internet_ul_dl_card)
 total_vpn_ul_dl_card = st.number_input("Total trafic VPN en UL/DL pour les Data Card", value=st.session_state.total_vpn_ul_dl_card)
 vpn_via_data_card = st.number_input("VPN (via Data Card) en pourcentage", min_value=0.0, max_value=100.0, value=st.session_state.vpn_via_data_card)
 
