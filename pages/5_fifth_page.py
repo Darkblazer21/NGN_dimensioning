@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="Plan Usager EPC", page_icon="📈", layout="centered")
+st.set_page_config(page_title="Trafic Signalisation", page_icon="📈", layout="centered")
 
 st.markdown("# Calcul du trafic de signalisation 📈")
 st.sidebar.markdown("# C'est la sixième page 🌠")
