@@ -335,3 +335,5 @@ data.append(total_capacity)
 
 df = pd.DataFrame(data, columns=columns)
 st.dataframe(df)
+
+st.write(mean_msg_size)

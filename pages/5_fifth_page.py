@@ -132,6 +132,17 @@ x2_ho_result = x2_ho_count * active_subscribers_count
 s1_ho_result = s1_ho_count * active_subscribers_count
 ho_inter_mme_result = ho_inter_mme_count * active_subscribers_count
 
+st.session_state.attach_result = attach_result
+st.session_state.detach_result = detach_result
+st.session_state.idle_to_active_result = idle_to_active_result
+st.session_state.pdn_result = pdn_result
+st.session_state.bearers_result = bearers_result
+st.session_state.tau_inter_mme_result = tau_inter_mme_result
+st.session_state.tau_result = tau_result
+st.session_state.x2_ho_result = x2_ho_result
+st.session_state.s1_ho_result = s1_ho_result
+st.session_state.ho_inter_mme_result = ho_inter_mme_result
+
 columns = ["Données", "Procédure/Abonné/HC", "Nombre"]
 
 # Afficher les résultats sous forme de tableau
