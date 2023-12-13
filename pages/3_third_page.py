@@ -154,8 +154,8 @@ if st.button("Calculer"):
     # DL
     volume_trafic_total_phone_dl = total_internet_dl_phone * num_smartphone / 1000000
     volume_trafic_total_card_dl = total_internet_dl_card * num_data_card / 1000000
-    volume_trafic_total_dl = volume_trafic_total_phone + volume_trafic_total_card
-    debit_internet_dl = volume_trafic_total * 8 * 1000 / 3600
+    volume_trafic_total_dl = volume_trafic_total_phone_dl + volume_trafic_total_card_dl
+    debit_internet_dl = volume_trafic_total_dl * 8 * 1000 / 3600
     data_card_using_vpn_dl = num_data_card * (vpn_via_data_card / 100)
     trafic_total_vpn_dl = data_card_using_vpn_dl * total_vpn_dl_card / 1000000
     debit_total_vpn_dl = trafic_total_vpn_dl * 8 * 1000 / 3600

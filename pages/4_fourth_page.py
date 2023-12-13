@@ -38,7 +38,7 @@ overhead_per_packet = st.number_input("Overhead par paquet (octets)", value=st.s
 packet_size = st.number_input("Taille paquet", value=st.session_state.packet_size)
 
 # Calculer les valeurs des tableaux
-overhead = overhead_per_packet * packet_size
+overhead = overhead_per_packet / packet_size
 internet_debit_service = (1 + overhead) * st.session_state.debit_internet_dl
 vpn_debit_service = (1 + overhead) * st.session_state.debit_total_vpn_dl
 total_debit = internet_debit_service + vpn_debit_service
@@ -75,3 +75,4 @@ with col2:
 
 with col3:
     st.write(df[["", "Pour l'interface SGi"]])
+
