@@ -88,7 +88,7 @@ if "trafic_total_vpn_dl" not in st.session_state:
 if "debit_total_vpn_dl" not in st.session_state:
     st.session_state.debit_total_vpn_dl = 0.0
 
-total_subscribers = st.number_input("Nombre total d'abonnés", min_value=0.0, step=1.0, value=st.session_state.total_subscribers)
+total_subscribers = st.number_input("Nombre total d'abonnés", value=st.session_state.total_subscribers)
 percentage_data_card = st.number_input("Pourcentage Data Card", min_value=0.0, max_value=100.0, value=st.session_state.percentage_data_card)
 percentage_smartphone = st.number_input("Pourcentage Smartphone", min_value=0.0, max_value=100.0, value=st.session_state.percentage_smartphone)
 

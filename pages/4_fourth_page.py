@@ -12,7 +12,7 @@ if "overhead_per_packet" not in st.session_state:
     st.session_state.overhead_per_packet = 0.0
 
 if "packet_size" not in st.session_state:
-    st.session_state.packet_size = 0.0
+    st.session_state.packet_size = 1.0
 
 if "overhead" not in st.session_state:
     st.session_state.overhead = 0.0
