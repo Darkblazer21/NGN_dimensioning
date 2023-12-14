@@ -15,8 +15,8 @@ Le choix du langage pour cette application a été porté vers **Python**. En ef
 Grâce à l'immense collection de bibliothèques qu'offre ce langage, il est aussi bien utile pour de la programmation classique que pour l'analyse de données, 
 l'apprentissage automatique ou le développement web.<br> 
 Pour ce projet j'ai choisi d'employer le framework **Streamlit**.
-## Lien vers l'application en ligne :
-Cliquez [ici](https://ngndimensioning.streamlit.app/first_page)
+## LIEN VERS L'APPLICATION EN LIGNE:
+Cliquez [ici](https://ngndimensioning.streamlit.app/)
 ## Streamlit
 Voici la description que l'on peut retrouver au niveau de la documentation de **Streamlit**: 
 > Streamlit est une bibliothèque Python open source qui facilite la création et le partage de superbes applications Web personnalisées pour l'apprentissage automatique et la science des données. En quelques minutes seulement, vous pouvez créer et déployer de puissantes applications de données. 
