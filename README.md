@@ -21,5 +21,5 @@ Cliquez [ici](https://ngndimensioning.streamlit.app/)
 Voici la description que l'on peut retrouver au niveau de la documentation de **Streamlit**: 
 > Streamlit est une bibliothèque Python open source qui facilite la création et le partage de superbes applications Web personnalisées pour l'apprentissage automatique et la science des données. En quelques minutes seulement, vous pouvez créer et déployer de puissantes applications de données. 
 Cela résume très bien ce que représente **Streamlit**.
-<br>
+>
 Pour plus d'informations, rendez-vous sur la [documentation](https://docs.streamlit.io/).
