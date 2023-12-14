@@ -332,8 +332,7 @@ numeric_data = [row[1:] for row in data]
 total_capacity = ["Capacité totale(Gbits/s)"] + [sum(filter(lambda x: isinstance(x, (int, float)), col)) for col in zip(*numeric_data)]
 
 data.append(total_capacity)
+st.subheader("Tableau mis à jour")
 
 df = pd.DataFrame(data, columns=columns)
 st.dataframe(df)
-
-st.write(mean_msg_size)
