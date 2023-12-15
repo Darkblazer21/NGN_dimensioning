@@ -20,3 +20,6 @@ multi = '''
 - ✔️ :blue[dimensionner les différents nœuds EPC]
 - ✔️ :blue[déterminer le nombre de nœuds requis] '''
 st.markdown(multi)
+
+st.markdown(":red[Pour que tout fonctionne correctement veuillez visiter les pages dans l'ordre comme ceci :]")
+st.markdown("###### 👉 :red[first_page] ➥ :green[second_page] ➥ ... ➥ :blue[last_page]")
