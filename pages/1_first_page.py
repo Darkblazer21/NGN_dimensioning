@@ -3,7 +3,7 @@ import pandas as pd
 
 st.set_page_config(page_title="Data Card", page_icon="📶", layout="centered")
 
-st.markdown("# 👋 Ici Kingbrems 👑😎")
+st.markdown("# 👋 Commençons ! 👑😎")
 st.sidebar.markdown("# C'est la première page 🌟")
 
 st.markdown("## Volume de trafic Internet & VPN généré par une \"Data Card\" en UL/DL et DL")
